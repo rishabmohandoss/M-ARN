@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Our Pixel Story",
+  "version": "1.0",
+  "description": "A cute pixel art couple with interactive photos and animations",
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "permissions": []
+}
